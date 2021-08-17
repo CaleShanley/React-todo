@@ -12,6 +12,7 @@ function Todo(props) {
 
   function closeModalHandler() {
     setModalIsOpen(false);
+    props.onDelete(props.id);
   }
   return (
     <div className="card">
